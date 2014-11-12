@@ -16,6 +16,7 @@ int main() {
 	Node *n2 = new Node(n4, n5, 2);
 	Node *n1;
 	n1 = new Node(n2, n3, 1);
+	n4->setData(54);
 	printf("Sum is %d\n", n1->getSum());
 	delete n1;
 	return 0;

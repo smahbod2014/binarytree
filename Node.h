@@ -14,6 +14,8 @@ public:
 
 	virtual ~Node();
 
+	void setData(int data);
+
 	int getSum();
 
 private:

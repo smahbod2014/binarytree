@@ -19,7 +19,13 @@ Node::~Node() {
 	delete right;
 }
 
-int Node::getSum() {
+void
+Node::setData(int data) {
+	this->data = data;
+}
+
+int
+Node::getSum() {
 	int sumLeft = left == nullptr ? 0 : left->getSum();
 	int sumRight = right == nullptr ? 0 : right->getSum();
 	return data + sumLeft + sumRight;
