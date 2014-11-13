@@ -14,6 +14,8 @@ public:
 
 	virtual ~Node();
 
+	int calculateHeight();
+
 	void setData(int data);
 
 	void clearData();
@@ -24,6 +26,7 @@ private:
 	Node *left;
 	Node *right;
 	int data;
+	int height;
 };
 
 #endif /* NODE_H_ */

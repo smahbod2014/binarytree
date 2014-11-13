@@ -18,6 +18,9 @@ int main() {
 	n1 = new Node(n2, n3, 1);
 	n4->setData(54);
 	printf("Sum is %d\n", n1->getSum());
+	printf("Height of node 1 is %d\n", n1->calculateHeight());
+	printf("Height of node 2 is %d\n", n2->calculateHeight());
+	printf("Height of node 4 is %d\n", n4->calculateHeight());
 	delete n1;
 	return 0;
 }

@@ -12,11 +12,28 @@ Node::Node(Node *left, Node *right, int data) {
 	this->left = left;
 	this->right = right;
 	this->data = data;
+	this->height = calculateHeight();
 }
 
 Node::~Node() {
 	delete left;
 	delete right;
+}
+
+int
+Node::calculateHeight() {
+	int leftHeight = 0;
+	int rightHeight = 0;
+
+	if (left != nullptr) {
+		leftHeight = 1 + left->calculateHeight();
+	}
+
+	if (right != nullptr) {
+		rightHeight = 1 + right->calculateHeight();
+	}
+
+	return leftHeight < rightHeight ? rightHeight : leftHeight;
 }
 
 void
