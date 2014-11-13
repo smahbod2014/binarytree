@@ -24,6 +24,11 @@ Node::setData(int data) {
 	this->data = data;
 }
 
+void
+Node::clearData() {
+	this->data = 0;
+}
+
 int
 Node::getSum() {
 	int sumLeft = left == nullptr ? 0 : left->getSum();

@@ -16,6 +16,8 @@ public:
 
 	void setData(int data);
 
+	void clearData();
+
 	int getSum();
 
 private:
